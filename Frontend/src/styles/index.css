@@ -1,0 +1,24 @@
+@import "tailwindcss";
+@variant dark (&:where(.dark, .dark *));
+@theme {
+  --color-brand: #6366f1;
+
+  /* gradient stops for light mode  */
+  --color-gradient-start: #f1f5f9;
+  --color-gradient-mid:   #e2e8f0;
+  --color-gradient-end:   #cbd5e1;
+
+  /* gradient stops for dark mode  */
+  --color-gradient-start-dark: #0f172a;
+  --color-gradient-mid-dark:   #1e293b;
+  --color-gradient-end-dark:   #334155;
+}
+@layer utilities {
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+  }
+  .scrollbar-thumb::-webkit-scrollbar-thumb {
+    background-color: #a1a1aa;
+    border-radius: 3px;
+  }
+}
